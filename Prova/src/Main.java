@@ -12,6 +12,11 @@ public class Main {
 		
 		System.out.println(c.getValue());
 		
+		Clock time = new Clock();
+		time.getHours();
+		time.getMinutes();
+		
+		
 	}
 
 }
