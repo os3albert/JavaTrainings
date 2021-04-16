@@ -1,3 +1,5 @@
+import java.awt.Rectangle;
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -16,7 +18,7 @@ public class Main {
 		time.getHours();
 		time.getMinutes();
 		
-		BankAccount harry = new BankAccount(10000);
+		BankAccount harry = new BankAccount();
 		
 	}
 
