@@ -1,5 +1,6 @@
 import java.awt.Rectangle;
 
+
 public class Main {
 
 	public static void main(String[] args) {
@@ -12,7 +13,7 @@ public class Main {
 		System.out.println(box);
 		box.setSize(20, 40);
 		System.out.println(box);
-		
+	
 		
 	}
 
