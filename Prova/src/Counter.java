@@ -1,8 +1,16 @@
 
+/**
+ * @author alber
+ * people counter
+ *
+ */
 public class Counter {
 	
 	private int value;
 	
+	/**
+	 * start the counter
+	 */
 	public Counter() {
 		this.value = 0;
 		

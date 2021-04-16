@@ -16,6 +16,7 @@ public class Main {
 		time.getHours();
 		time.getMinutes();
 		
+		BankAccount harry = new BankAccount(10000);
 		
 	}
 
