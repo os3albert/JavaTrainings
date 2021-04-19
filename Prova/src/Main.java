@@ -18,8 +18,8 @@ public class Main {
 		time.getHours();
 		time.getMinutes();
 		
-		BankAccount harry = new BankAccount();
-		
+		String ciao = "Ciao Mondo!";
+		System.out.println(ciao.substring(5, 5+5));
 	}
 
 }
