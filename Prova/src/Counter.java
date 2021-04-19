@@ -1,3 +1,4 @@
+import java.util.logging.Logger;
 
 /**
  * @author alber
@@ -13,6 +14,7 @@ public class Counter {
 	 */
 	public Counter() {
 		this.value = 0;
+		Logger.getGlobal().info("sono dentro il counter");
 		
 	}
 	

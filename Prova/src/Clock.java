@@ -8,6 +8,7 @@ public class Clock {
 	
 	private int hours;
 	private int minutes;
+	public enum type { ore, minuti };
 	
 	
 	/**
