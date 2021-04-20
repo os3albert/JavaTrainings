@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -14,6 +15,23 @@ public class Main {
 		Logger.getGlobal().setLevel(Level.INFO);
 		
 		Logger.getGlobal().info("ciao a tutti");
+		
+		ArrayList<Integer> numeri = new ArrayList<>();
+		numeri.add(1);
+		numeri.add(3);
+		
+		MultiVal elementi = new MultiVal(1,3,5);
+		elementi.add(3, 5, 6);
+		
+		int[] nums = new int[3];
+		nums[0] = 20;
+		nums[1] = 30;
+		nums[2] = 40;
+
+		elementi.add(nums); // nei parametri variabili si possono passare anche i valori del array come parametri
+		
+		System.out.println(elementi.toString());
+		
 		
 		c.count();
 		c.count();
@@ -46,6 +64,16 @@ public class Main {
 		String dao = "ciao";
 		System.out.println(dao.compareTo("aiao"));
 		
+	}
+	
+	static int somme(int... numeri) {
+		int res = 0;
+		
+		for (int i : numeri) {
+			res += i;
+		}
+		
+		return res;
 	}
 
 }
