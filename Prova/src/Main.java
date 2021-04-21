@@ -11,6 +11,7 @@ public class Main {
 		
 		
 		Counter c = new Counter();
+		System.out.println(c.getCountCounter());
 		
 		Logger.getGlobal().setLevel(Level.INFO);
 		
@@ -19,6 +20,10 @@ public class Main {
 		ArrayList<Integer> numeri = new ArrayList<>();
 		numeri.add(1);
 		numeri.add(3);
+		
+		System.out.println(numeri);
+		c.collateralMethod(numeri);
+		System.out.println(numeri + "numeri");
 		
 		MultiVal elementi = new MultiVal(1,3,5);
 		elementi.add(3, 5, 6);
