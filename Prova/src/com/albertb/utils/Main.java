@@ -14,7 +14,7 @@ public class Main {
 		Counter c = new Counter();
 		System.out.println(c.getCountCounter());
 		
-		Logger.getGlobal().setLevel(Level.INFO);
+		Logger.getGlobal().setLevel(Level.OFF);
 		
 		Logger.getGlobal().info("ciao a tutti");
 		
