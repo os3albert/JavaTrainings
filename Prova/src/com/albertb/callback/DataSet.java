@@ -1,4 +1,4 @@
-package com.albertb.interfaces;
+package com.albertb.callback;
 
 /**
  * calcola informazioni relative a un insieme di dati.
@@ -8,25 +8,29 @@ package com.albertb.interfaces;
 public class DataSet {
 	
 	private double sum;
-	private Measurable maximum;
+	private Object maximum;
 	private int count;
+	private Mesurer mesurer;
 	
 	/**
 	 * Costruisce un insieme di dati vuoto
+	 * @param aMesurer l'oggetto che implementa Mesurer verra'
+	 * passato come parametro quando si costruisce l'oggetto
 	 */
-	public DataSet() {
+	public DataSet(Mesurer aMesurer) {
 		sum = 0;
 		count = 0;
 		maximum = null;
+		mesurer = aMesurer;
 	}
 	
 	/**
 	 * Aggiunge un valore all'insieme di dati
 	 * @param x un valore
 	 */
-	public void add(Measurable x) {
-		sum = sum + x.getMeasure();
-		if (count == 0 || maximum.getMeasure() < x.getMeasure()) maximum = x; // se count == 0 o il massimo e' minore di x, allora il massimo prende 0
+	public void add(Object x) {
+		sum = sum + mesurer.measure(x); // questo svolge la funzione di leggere il valore del oggetto passato come parametro
+		if (count == 0 || mesurer.measure(maximum) < mesurer.measure(x)) maximum = x; // se count == 0 o il massimo e' minore di x, allora il massimo prende x
 		count++;
 	}
 	
@@ -44,7 +48,7 @@ public class DataSet {
 	 * @return il massimo, oppure 0 se non sono stati inseriti dati
 	 */
 	public double getMaximum() {
-		return maximum.getMeasure();
+		return 
 	}
 
 }

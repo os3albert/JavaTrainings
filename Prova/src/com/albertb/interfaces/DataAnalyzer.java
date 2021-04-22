@@ -1,5 +1,7 @@
 package com.albertb.interfaces;
 import java.util.Scanner;
+
+import com.albertb.interfaces.DataSet;
 public class DataAnalyzer {
 
 	public static void main(String[] args) {
