@@ -48,7 +48,7 @@ public class DataSet {
 	 * @return il massimo, oppure 0 se non sono stati inseriti dati
 	 */
 	public double getMaximum() {
-		return 
+		return 0;
 	}
 
 }
